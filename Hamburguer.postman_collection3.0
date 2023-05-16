@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "44f8a081-d46a-47bc-8a4f-b2cdbe1317d5",
+		"name": "Hamburguer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212223"
+	},
+	"item": [
+		{
+			"name": "selecionar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/cardapio/selecionar",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"cardapio",
+						"selecionar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inserir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_cardapio\": \"novo cardapiofordxferrari\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/cardapio/inserir",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"cardapio",
+						"inserir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"2\",\r\n    \"nome_cardapio\": \"Macarrao\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/cardapio/alterar",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"cardapio",
+						"alterar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/cardapio/excluir/:id",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"cardapio",
+						"excluir",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
